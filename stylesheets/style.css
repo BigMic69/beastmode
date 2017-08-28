@@ -113,41 +113,48 @@ body {
     grid-template-areas: "hd hd hd" "navi navi side" "main main side" "ft ft side";
   }
 }
+
 /* line 24, ../sass/parts/_base.sass */
-#main-grid nav, #main-grid main, #main-grid footer {
-  padding: 5px;
+nav {
+  grid-area: navi;
   background: #555;
-  font-size: 1.25em;
-}
-/* line 28, ../sass/parts/_base.sass */
-#main-grid header, #main-grid aside {
   padding: 5px;
-  background: #999;
-  color: #333;
-  font-size: 1.25em;
+  font-size: 1.25;
 }
 
-/* line 35, ../sass/parts/_base.sass */
+/* line 28, ../sass/parts/_base.sass */
 header {
   grid-area: hd;
+  background: #4be712;
+  padding: 5px;
+  font-size: 1.25;
 }
 
-/* line 38, ../sass/parts/_base.sass */
+/* line 32, ../sass/parts/_base.sass */
 main {
   grid-area: main;
+  background: #555;
+  padding: 5px;
+  font-size: 1.25;
+}
+
+/* line 36, ../sass/parts/_base.sass */
+aside {
+  grid-area: side;
+  background: #555;
+  padding: 5px;
+  font-size: 1.25;
 }
 
 /* line 40, ../sass/parts/_base.sass */
-aside {
-  grid-area: side;
-}
-
-/* line 42, ../sass/parts/_base.sass */
 footer {
   grid-area: ft;
+  padding: 5px;
+  font-size: 1.25;
+  background: #555;
 }
 
-/* line 45, ../sass/parts/_base.sass */
+/* line 44, ../sass/parts/_base.sass */
 p {
   line-height: 1.5em;
 }
@@ -208,7 +215,7 @@ nav {
   background-image: url("../img/beastmode-1.png");
   background-size: cover;
   background-position: center top;
-  height: 15vh;
+  height: 25vh;
   overflow: hidden;
 }
 @media (min-width: 500px) {
@@ -236,9 +243,6 @@ nav {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background: rgba(25, 25, 25, 0.8);
-  border: 1px solid rgba(75, 231, 18, 0.6);
-  border-radius: 5px;
 }
 
 /* line 2, ../sass/parts/_aside.sass */

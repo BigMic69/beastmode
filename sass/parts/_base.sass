@@ -21,26 +21,25 @@ body
     grid-template-columns: 1fr 1fr 1fr
     grid-template-areas: "hd hd hd" "navi navi side" "main main side" "ft ft side"
 
-  nav, main, footer
-    padding: 5px
-    background: #555
-    font-size: 1.25em
-  header, aside
-    padding: 5px
-    background: #999
-    color: #333
-    font-size: 1.25em
-
-
+nav
+  grid-area: navi
+  background: #555
+  +cush-primary
 header
   grid-area: hd
-
+  background: $clr-primary
+  +cush-primary
 main
   grid-area: main
+  background: #555
+  +cush-primary
 aside
   grid-area: side
+  background: #555
+  +cush-primary
 footer
   grid-area: ft
-
+  +cush-primary
+  background: #555
 p
   line-height: 1.5em
