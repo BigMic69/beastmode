@@ -1,0 +1,28 @@
+nav
+  grid-area: navi
+
+.box-menu
+  ul
+    text-align: center
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    grid-template-rows: auto
+    @media (min-width: 520px)
+      grid-template-columns: repeat(4, 1fr)
+    li
+      +cush(5px, 0)
+      +b-rad(5px)
+      background: #777
+      +trans-0
+      &:hover
+        background: rgba(75, 231, 18, .4)
+      a
+        display: flex
+        justify-content: center
+        +cush(0, 10px)
+        +menu-style
+        font-family: Ubuntu
+        color: #4be712
+        +trans-0
+        &:hover
+          color: #333
