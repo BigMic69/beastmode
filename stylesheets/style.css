@@ -117,7 +117,6 @@ body {
 /* line 24, ../sass/parts/_base.sass */
 nav {
   grid-area: navi;
-  background: #555;
   padding: 5px;
   font-size: 1.25;
 }
@@ -154,9 +153,40 @@ footer {
   background: #555;
 }
 
-/* line 44, ../sass/parts/_base.sass */
+/* line 45, ../sass/parts/_base.sass */
+h1 {
+  font-size: 2em !important;
+}
+
+/* line 47, ../sass/parts/_base.sass */
 p {
-  line-height: 1.5em;
+  line-height: 1.5em !important;
+}
+
+/*---------- ABOUT BASE ---------- */
+/* line 52, ../sass/parts/_base.sass */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: 20px;
+}
+@media (min-width: 520px) {
+  /* line 52, ../sass/parts/_base.sass */
+  .about-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* line 60, ../sass/parts/_base.sass */
+.about-header {
+  grid-column: 3 span;
+  background: #555;
+}
+/* line 63, ../sass/parts/_base.sass */
+.about-header h1 {
+  padding: 20px;
+  font-size: 2em;
 }
 
 /* line 1, ../sass/parts/_navigation.sass */
