@@ -1,9 +1,9 @@
 *
   font-size: 16px
-  font-family: Ubuntu
   letter-spacing: 1.25px
 
 body
+  font-family: Ubuntu
   +no-cush
   background: #111a36
   color: #fff
@@ -19,7 +19,7 @@ body
     grid-template-rows: auto 60px auto
   @media (min-width: 769px)
     grid-template-columns: 1fr 1fr 1fr
-    grid-template-areas: "hd hd hd" "navi navi side" "main main side" "ft ft side"
+    grid-template-areas: "hd hd hd" "navi navi navi" "main main side" "ft ft side"
 
 nav
   grid-area: navi
@@ -46,20 +46,3 @@ h1
   font-size: 2em !important
 p
   line-height: 1.5em !important
-
-
-/*---------- ABOUT BASE ----------*/
-.about-grid
-  display: grid
-  grid-template-columns: 1fr
-  grid-template-rows: auto
-  grid-gap: 20px
-  @media (min-width: 520px)
-    grid-template-columns: repeat(3, 1fr)
-
-.about-header
-  grid-column: 3 span
-  background: #555
-  h1
-    padding: 20px
-    font-size: 2em

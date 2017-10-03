@@ -1,0 +1,36 @@
+/*---------- ABOUT BASE ----------*/
+.about-grid
+  display: grid
+  grid-template-columns: 1fr
+  grid-template-rows: auto
+  grid-gap: 20px
+  +box-config(90%, auto, auto, 20px 0)
+  @media (min-width: 520px)
+    grid-template-columns: repeat(3, 1fr)
+
+.about-header
+  grid-column: 3 span
+  background: #555
+  h1
+    padding: 10px
+    text-align: center
+    font-size: 2em
+
+.about-content
+  grid-column: 3 span
+  display: grid
+  grid-gap: 20px
+  grid-template-columns: 1fr
+  @media (min-width: 768px)
+    grid-template-columns: 1fr 1fr 1fr
+  p
+    grid-column: 3 span
+    padding: 5px
+    background: #222
+    text-align: center
+
+.img-container
+  display: grid
+  align-content: center
+  .img-responsive
+    width: 100%
