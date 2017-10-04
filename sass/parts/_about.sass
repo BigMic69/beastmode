@@ -4,33 +4,41 @@
   grid-template-columns: 1fr
   grid-template-rows: auto
   grid-gap: 20px
-  +box-config(90%, auto, auto, 20px 0)
+  +box-config(90%, auto, auto, 20px 0 100px)
   @media (min-width: 520px)
     grid-template-columns: repeat(3, 1fr)
 
 .about-header
   grid-column: 3 span
   background: #555
+  border-bottom: 1px solid #fff
   h1
     padding: 10px
     text-align: center
     font-size: 2em
 
+
 .about-content
   grid-column: 3 span
   display: grid
-  grid-gap: 20px
+  grid-row-gap: 30px
   grid-template-columns: 1fr
-  @media (min-width: 768px)
+  @media (min-width: 769px)
     grid-template-columns: 1fr 1fr 1fr
+  .img-container
+    //display: grid
+    grid-column: 1 span
+    //align-content: center
+    padding: 10px
+    background: #222
+    .img-responsive
+      width: 100%
+      +border-outline
+
+.text-content
+  grid-column: 3 span
   p
-    grid-column: 3 span
     padding: 5px
     background: #222
-    text-align: center
-
-.img-container
-  display: grid
-  align-content: center
-  .img-responsive
-    width: 100%
+    text-align: left
+    text-indent: 20px
