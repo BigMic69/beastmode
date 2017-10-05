@@ -1,6 +1,6 @@
 *
   font-size: 16px
-  letter-spacing: 1.25px
+  letter-spacing: 1.125px
 
 body
   font-family: Ubuntu
@@ -12,14 +12,14 @@ body
   +box-config(90%, auto, auto, 20px 0)
   display: grid
   grid-template-columns: 1fr
-  grid-auto-rows: minmax(60px, auto)
+  grid-auto-rows: minmax(40px, auto)
   grid-gap: 20px
   grid-template-areas: "hd" "navi" "side" "main" "ft"
-  @media (min-width: 520px)
+  //@media (min-width: 520px)
     grid-template-rows: auto 60px auto
-  @media (min-width: 769px)
+  @media (min-width: 994px) and (orientation: landscape)
     grid-template-columns: 1fr 1fr 1fr
-    grid-template-areas: "hd hd hd" "navi navi navi" "main main side" "ft ft side"
+    grid-template-areas: "hd hd hd" "navi navi navi" "main main side" "ft ft ft"
 
 nav
   grid-area: navi
@@ -31,19 +31,21 @@ header
   +cush-primary
 main
   grid-area: main
-  background: #555
+  //background: #555
   +cush-primary
 aside
   grid-area: side
-  background: #555
+  //background: #555
   +cush-primary
 footer
   grid-area: ft
+  height: 40px
   +cush-primary
-  background: #555
+  padding-top: 80px
+  //background: #555
   text-align: center
 
 h1
   font-size: 2em !important
 p
-  line-height: 1.5em !important
+  line-height: 1.5em

@@ -9,7 +9,7 @@
     grid-template-columns: repeat(3, 1fr)
 
 .about-header
-  grid-column: 3 span
+  grid-column: span 3
   background: #555
   border-bottom: 1px solid #fff
   h1
@@ -19,16 +19,16 @@
 
 
 .about-content
-  grid-column: 3 span
+  grid-column: span 3
   display: grid
   grid-row-gap: 30px
   grid-template-columns: 1fr
   @media (min-width: 769px)
     grid-template-columns: 1fr 1fr 1fr
   .img-container
-    //display: grid
-    grid-column: 1 span
-    //align-content: center
+    display: grid
+    grid-column: span 1
+    align-content: center
     padding: 10px
     background: #222
     .img-responsive
@@ -36,7 +36,7 @@
       +border-outline
 
 .text-content
-  grid-column: 3 span
+  grid-column: span 3
   p
     padding: 5px
     background: #222
