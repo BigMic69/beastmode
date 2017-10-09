@@ -92,7 +92,7 @@ body {
   width: 90%;
   height: auto;
   margin: auto;
-  padding: 20px 0;
+  padding: 10px 0;
   box-sizing: border-box;
   display: grid;
   grid-template-columns: 1fr;
@@ -103,19 +103,24 @@ body {
 @media (min-width: 994px) and (orientation: landscape) {
   /* line 11, ../sass/parts/_base.sass */
   #main-grid {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    padding: 20px 0;
+    box-sizing: border-box;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "hd hd hd" "navi navi navi" "main main side" "ft ft ft";
   }
 }
 
-/* line 24, ../sass/parts/_base.sass */
+/* line 25, ../sass/parts/_base.sass */
 nav {
   grid-area: navi;
   padding: 5px;
   font-size: 1.25;
 }
 
-/* line 28, ../sass/parts/_base.sass */
+/* line 29, ../sass/parts/_base.sass */
 header {
   grid-area: hd;
   background: #4be712;
@@ -123,21 +128,21 @@ header {
   font-size: 1.25;
 }
 
-/* line 32, ../sass/parts/_base.sass */
+/* line 33, ../sass/parts/_base.sass */
 main {
   grid-area: main;
   padding: 5px;
   font-size: 1.25;
 }
 
-/* line 36, ../sass/parts/_base.sass */
+/* line 37, ../sass/parts/_base.sass */
 aside {
   grid-area: side;
   padding: 5px;
   font-size: 1.25;
 }
 
-/* line 40, ../sass/parts/_base.sass */
+/* line 41, ../sass/parts/_base.sass */
 footer {
   grid-area: ft;
   height: 40px;
@@ -147,14 +152,39 @@ footer {
   text-align: center;
 }
 
-/* line 48, ../sass/parts/_base.sass */
+/* line 49, ../sass/parts/_base.sass */
 h1 {
   font-size: 2em !important;
 }
 
-/* line 50, ../sass/parts/_base.sass */
-p {
-  line-height: 1.5em;
+/* line 52, ../sass/parts/_base.sass */
+.article-wrap {
+  text-align: center;
+  padding-bottom: 2em;
+}
+/* line 55, ../sass/parts/_base.sass */
+.article-wrap h3 {
+  margin-bottom: 10px;
+  padding: 5px;
+  font-size: 1.5em;
+  font-family: Ubuntu;
+  background: rgba(75, 231, 18, 0.6);
+}
+/* line 61, ../sass/parts/_base.sass */
+.article-wrap p {
+  margin-bottom: 10px;
+  padding: 5px;
+  background: #333;
+  color: #f5f5f5;
+  text-align: left;
+  text-indent: 1em;
+  font-size: 0.9 em !important;
+  line-height: 2em !important;
+}
+/* line 70, ../sass/parts/_base.sass */
+.article-wrap .img-side-1 {
+  width: 100%;
+  box-shadow: 1px 1px 3px #4be712;
 }
 
 /*---------- ABOUT BASE ---------- */
@@ -284,6 +314,12 @@ nav {
 .box-menu ul li a:hover {
   color: #333;
 }
+@media (min-width: 768px) and (orientation: landscape) {
+  /* line 22, ../sass/parts/_navigation.sass */
+  .box-menu ul li a {
+    font-size: 2em;
+  }
+}
 
 /* line 1, ../sass/parts/_header.sass */
 .box-img {
@@ -333,26 +369,4 @@ video {
 /* line 1, ../sass/parts/_aside.sass */
 aside {
   padding-bottom: 10px;
-}
-
-/* line 4, ../sass/parts/_aside.sass */
-.article-wrap {
-  text-align: center;
-  padding-bottom: 2em;
-}
-/* line 7, ../sass/parts/_aside.sass */
-.article-wrap h3 {
-  margin-bottom: 10px;
-  padding: 5px;
-  font-size: 1.5em;
-  font-family: Ubuntu;
-  background: rgba(75, 231, 18, 0.6);
-}
-/* line 13, ../sass/parts/_aside.sass */
-.article-wrap p {
-  margin-bottom: 10px;
-  padding: 5px;
-  background: #333;
-  color: #f5f5f5;
-  font-size: 1rem !important;
 }
