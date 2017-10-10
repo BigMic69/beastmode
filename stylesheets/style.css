@@ -184,6 +184,7 @@ h1 {
 /* line 70, ../sass/parts/_base.sass */
 .article-wrap .img-side-1 {
   width: 100%;
+  margin-top: 1em;
   box-shadow: 1px 1px 3px #4be712;
 }
 
